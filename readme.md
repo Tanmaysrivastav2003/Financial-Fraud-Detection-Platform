@@ -9,8 +9,6 @@ The platform is built around a series of synthetic datasets, generated to mimic 
 
 ---
 
-## Architecture
-
 The platform is built in distinct, modular stages, feeding data and intelligence forward to empower a suite of analytical tools tailored for different user personas.
 
 | **Stage 1: Foundation (Data Generation)** | **Stage 2: Intelligence (Modeling & XAI)** | **Stage 3: Action & Insights (Deployment)** |
