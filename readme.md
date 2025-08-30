@@ -14,7 +14,7 @@ The platform is built in distinct, modular stages, feeding data and intelligence
 | **Stage 1: Foundation (Data Generation)** | **Stage 2: Intelligence (Modeling & XAI)** | **Stage 3: Action & Insights (Deployment)** |
 | :--- | :--- | :--- |
 | **Code:**<br>`01_data_generation/`<br>• `transactiondataset-1.ipynb`<br>• `credit-debitdataset.ipynb`<br>• `phonenumber.ipynb` | **Code:**<br>`02_eda_and_modeling/`<br>• `final-model.ipynb` | **Track A: The Manager's View**<br>• **Tool:** `Tableau`<br>• **Input:** `data/*.csv`<br>• **Output:** Interactive BI Dashboard<br>• **Purpose:** High-level monitoring of trends & KPIs. |
-| **⬇️** | **⬇️** | **Track B: The Analyst's Tool**<br>• **Tool:** `Streamlit`<br>• **Input:** `models/fraud_detection_artifacts.pkl`<br>• **Output:** Interactive Web App<br>• **Purpose:** Real-time prediction & explanation. |
+| **** | **** | **Track B: The Analyst's Tool**<br>• **Tool:** `Streamlit`<br>• **Input:** `models/fraud_detection_artifacts.pkl`<br>• **Output:** Interactive Web App<br>• **Purpose:** Real-time prediction & explanation. |
 | **Output:**<br>`data/`<br>• `TransactionDataset1.csv`<br>• `credit-debit dataset.csv`<br>• `synthetic_bank_data.csv`| **Output:**<br>`models/`<br>• `fraud_detection_artifacts.pkl` | **Track C: The Investigator's Edge**<br>• **Tool:** `Python (NetworkX)`<br>• **Input:** `data/synthetic_bank_data.csv`<br>• **Output:** Graph Visualization (`.png`)<br>• **Purpose:** Uncovering hidden networks & fraud rings. |
 
 ---
