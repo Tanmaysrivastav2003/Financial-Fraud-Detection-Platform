@@ -14,17 +14,10 @@ The platform is built around a series of synthetic datasets, generated to mimic 
 The platform is built in distinct, modular stages, feeding data and intelligence forward to empower a suite of analytical tools tailored for different user personas.
 
 | **Stage 1: Foundation (Data Generation)** | **Stage 2: Intelligence (Modeling & XAI)** | **Stage 3: Action & Insights (Deployment)** |
-| :-------------------------------------- | :----------------------------------------- | :--------------------------------------- |
+| :--- | :--- | :--- |
 | **Code:**<br>`01_data_generation/`<br>• `transactiondataset-1.ipynb`<br>• `credit-debitdataset.ipynb`<br>• `phonenumber.ipynb` | **Code:**<br>`02_eda_and_modeling/`<br>• `final-model.ipynb` | **Track A: The Manager's View**<br>• **Tool:** `Tableau`<br>• **Input:** `data/*.csv`<br>• **Output:** Interactive BI Dashboard<br>• **Purpose:** High-level monitoring of trends & KPIs. |
-| **⬇️**                                    | **⬇️**                                     | **Track B: The Analyst's Tool**<br>• **Tool:** `Streamlit`<br>• **Input:** `models/*.pkl`<br>• **Output:** Interactive Web App<br>• **Purpose:** Real-time prediction & explanation. |
-| **Output:**<br>`data/`<br>• `TransactionDataset1.csv`<br>• `credit-debit dataset.csv` | **Output:**<br>`models/`<br>• `fraud_detection_artifacts.pkl` | **Track C: The Investigator's Edge**<br>• **Tool:** `Neo4j`<br>• **Input:** `data/*.csv`<br>• **Output:** Graph Database<br>• **Purpose:** Uncovering hidden networks & fraud rings. |
-
-1.  **Data Generation:** A suite of Jupyter notebooks uses libraries like `Faker` and `pandas` to create realistic, synthetic datasets covering transactions, credit/debit activity, and customer information with embedded fraud patterns.
-2.  **Modeling & Explainability:** A Random Forest model is trained on the generated data. Crucially, a **SHAP (SHapley Additive exPlanations)** explainer is created alongside the model to provide transparency into every prediction.
-3.  **Action & Analysis (The Three Tiers):**
-    *   **Tier 1: Interactive Prediction (Streamlit):** A user-friendly web application allows an analyst to input transaction details and receive an instant fraud prediction, along with a visual explanation of *why* the model made its decision.
-    *   **Tier 2: Business Intelligence (Tableau):** An executive dashboard provides a high-level, aggregate view of fraud trends. It visualizes KPIs, geographic fraud hotspots, and risk by transaction category, enabling data-driven strategic decisions.
-    *   **Tier 3: Network Investigation (NetworkX / Graph Database):** Advanced tools are provided to uncover complex fraud rings. By visualizing users and their shared credentials (like phone numbers) as a graph, investigators can identify hidden relationships and coordinated fraud networks that are invisible in tabular data.
+| **⬇️** | **⬇️** | **Track B: The Analyst's Tool**<br>• **Tool:** `Streamlit`<br>• **Input:** `models/fraud_detection_artifacts.pkl`<br>• **Output:** Interactive Web App<br>• **Purpose:** Real-time prediction & explanation. |
+| **Output:**<br>`data/`<br>• `TransactionDataset1.csv`<br>• `credit-debit dataset.csv`<br>• `synthetic_bank_data.csv`| **Output:**<br>`models/`<br>• `fraud_detection_artifacts.pkl` | **Track C: The Investigator's Edge**<br>• **Tool:** `Python (NetworkX)`<br>• **Input:** `data/synthetic_bank_data.csv`<br>• **Output:** Graph Visualization (`.png`)<br>• **Purpose:** Uncovering hidden networks & fraud rings. |
 
 ---
 
