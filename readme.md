@@ -44,32 +44,40 @@ python -m venv venv
 pip install -r requirements.txt
 pip install -r 03_streamlit_app/requirements.txt
 
- Step 2: Generate the Synthetic Data
+Step 2: Generate the Synthetic Data
 
-##  The raw CSV files are not included in this repository. You must generate them by running the notebooks.
-##  Navigate to the 01_data_generation/ directory.
-##  Run all the Jupyter notebooks in this folder.
-##  This will populate the data/ directory with the necessary CSV files.
-
-
-## Step 3: Train the Model
-## Navigate to the 02_eda_and_modeling/ directory.
-## Run the final-model.ipynb notebook.
-## This will train the Random Forest model and save the final fraud_detection_artifacts.pkl file in the models/ directory.
+ The raw CSV files are not included in this repository. You must generate them by running the notebooks.
+  Navigate to the 01_data_generation/ directory.
+  Run all the Jupyter notebooks in this folder.
+  This will populate the data/ directory with the necessary CSV files.
 
 
+ Step 3: Train the Model
+   Navigate to the 02_eda_and_modeling/ directory.
+   Run the final-model.ipynb notebook.
+   This will train the Random Forest model and save the final fraud_detection_artifacts.pkl file in the models/ directory.
 
-## Step 4: Run the Platform Components
-## You can now run any of the final-tier applications.
-streamlit run 03_streamlit_app/app.py
 
 
-## To run the Network Analysis:
-##  Navigate to the 04_graph_database/ directory.
-##  Run the network_analysis.ipynb notebook.
-## This will generate a fraud_ring_network.png image of the fraud rings.
-## To view the Tableau Dashboard:
-## Open Tableau Public.
-## Connect to the data/TransactionDataset1.csv file.
-## Follow standard procedures to build worksheets for KPIs, a geographic map of fraud, and charts by transaction category. Assemble these into an interactive dashboard.
+ Step 4: Run the Platform Components
+    You can now run any of the final-tier applications.
+     streamlit run 03_streamlit_app/app.py
+
+
+To run the Network Analysis:
+    Navigate to the 04_graph_database/ directory.
+    Run the network_analysis.ipynb notebook.
+    This will generate a fraud_ring_network.png image of the fraud rings.
+    To view the Tableau Dashboard:
+     Open Tableau Public.
+    Connect to the data/TransactionDataset1.csv file.
+   Follow standard procedures to build worksheets for KPIs, a geographic map of fraud, and charts by transaction category. Assemble these into an interactive dashboard.
+
+
+
+Technologies Used
+Data Science & ML: Python, pandas, scikit-learn, SHAP, Jupyter
+Web Application: Streamlit
+Graph Analysis: NetworkX, Matplotlib
+Business Intelligence: Tableau
 
